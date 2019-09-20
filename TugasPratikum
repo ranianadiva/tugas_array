@@ -1,0 +1,169 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Jobsheet10;
+
+import java.util.Scanner;
+
+
+public class TugasPratikum01 {
+
+    public static void main(String[] args) {
+        int cari;
+        int a = 0;
+        boolean found = false;
+        int[] data = new int[]{74, 98, 72, 74, 72, 90, 81, 72};
+        System.out.println("Data pada array :");
+        for (int i = 0; i < data.length; i++) {
+            System.out.print(data[i] + "\t");
+        }
+        Scanner input = new Scanner(System.in);
+        System.out.println("\n Masukkan angka yang ingin anda cari ");
+        cari = input.nextInt();
+
+        for (int i = 0; i < data.length; i++) {
+            if (cari == data[i]) {
+                found = true;
+                a++;
+
+            }
+
+        }
+        if (found == true) {
+            System.out.println("Data yang dicari ditemukan sebanyak " + a);
+        } else {
+            System.out.println("Data tidak ditemukan ");
+
+        }
+    }
+
+}
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Jobsheet10;
+
+/**
+ *
+ * @author ASUS
+ */
+public class TugasPratikum02 {
+
+    public static void main(String[] args) {
+        int a = 0;
+        boolean found = false;
+        int[] data = new int[]{83, 76, 45, 90, 85, 80, 78, 74};
+
+        System.out.println("Data pada array :");
+        for (int i = 0; i < data.length; i++) {
+            System.out.print(data[i] + "\t");
+        }
+        for (int i : data){
+            a = a+i;
+        }
+        double ratarata;
+        ratarata = a / data.length;
+        System.out.println("\nratarata nilai = " + ratarata);
+        System.out.println("nilai yang di atas ratarata : ");
+        for (int i = 0; i < data.length; i++) {
+            if (data[i] > ratarata) {
+                System.out.print(data[i] + "\t");
+            }
+
+        }
+    }
+
+}
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Jobsheet10;
+
+/**
+ *
+ * @author ASUS
+ */
+public class TugasPratikum03 {
+
+    public static void main(String[] args) {
+        int cari;
+        int a = 0;
+        int b = 0;
+        boolean found = false;
+        int[] data = new int[]{92, 98, 76, 72, 84, 101, 39};
+        System.out.println("Data pada array : \t");
+        for (int i = 0; i < data.length; i++) {
+            System.out.print(data[i] + "\t");
+
+        }
+        System.out.println();
+        System.out.println("Nilai yang merupakan kelipatan 3 adalah : ");
+        for (int i = 0; i < data.length; i++) {
+            if (a == data[i] %3) {
+                b++;
+                System.out.println(data[i]);
+
+            }
+        }
+    }
+
+}
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Jobsheet10;
+
+import java.util.Scanner;
+
+public class TugasPraktikum04 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String cari;
+        System.out.print("Masukkan kata : ");
+        cari = input.nextLine();
+
+        int a = 0;
+        int b = 0;
+        int u = 0;
+        int e = 0;
+        int o = 0;
+        for (int i = 0; i < cari.length(); i++) {
+            if (cari.charAt(i) == 'a') {
+                a++;
+            }
+            if (cari.charAt(i)== 'i') {
+                b++;
+            }
+            if (cari.charAt(i) == 'u') {
+                u++;
+            }
+            if (cari.charAt(i) == 'e') {
+                e++;
+            }
+            if (cari.charAt(i) == 'o') {
+                o++;
+            }
+        }
+        System.out.println("Jumlah huruf a pada kata di atas adalah : " + a);
+        System.out.println("Jumlah huruf i pada kata di atas adalah : " + b);
+        System.out.println("Jumlah huruf u pada kata di atas adalah : " + u);
+        System.out.println("Jumlah huruf e pada kata di atas adalah : " + e);
+        System.out.println("Jumlah huruf 0 pada kata di atas adalah : " + o);
+        System.out.println("Jumlah huruf pada kata di atas adalah : " + cari.length() );
+
+    }
+}
