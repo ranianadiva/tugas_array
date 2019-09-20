@@ -1,0 +1,44 @@
+# tugas_array
+LATIHAN PRAKTIKUM
+Masukkan data yang ingin anda cari
+rania
+Alhamdulillah Data Ditemukan!
+
+Masukkan data yang ingin anda cari
+1
+Data anda ditemukan pada indeks ke-0
+
+Data pada array :
+70	120	30	40	50	
+ Data terbesar pada array yaitu : 120
+ 
+ Masukkan kata ananda
+Jumlah huruf a pada kata di atas adalah : 3
+
+TUGAS PRAKTIKUM
+Data pada array :
+74	98	72	74	72	90	81	72	
+ Masukkan angka yang ingin anda cari 
+74
+Data yang dicari ditemukan sebanyak 2
+
+Data pada array :
+83	76	45	90	85	80	78	74	
+ratarata nilai = 76.0
+nilai yang di atas ratarata : 
+83	90	85	80	78	
+
+Data pada array : 	
+92	98	76	72	84	101	39	
+Nilai yang merupakan kelipatan 3 adalah : 
+72
+84
+39
+
+Masukkan kata : SMK Telkom Malang
+Jumlah huruf a pada kata di atas adalah : 2
+Jumlah huruf i pada kata di atas adalah : 0
+Jumlah huruf u pada kata di atas adalah : 0
+Jumlah huruf e pada kata di atas adalah : 1
+Jumlah huruf 0 pada kata di atas adalah : 1
+Jumlah huruf vokal kata di atas adalah : 4
