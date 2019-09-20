@@ -1,0 +1,99 @@
+import java.util.Scanner;
+
+public class LatihanPratikum01 {
+
+    public static void main(String[] args) {
+        String cari;
+        boolean found = false;
+        String[] data = new String[]{"rania", "celsi", "putas", "eca", "gita"
+        };
+        Scanner input = new Scanner(System.in);
+        System.out.println("Masukkan data yang ingin anda cari");
+        cari = input.next();
+        for (int i = 0; i < data.length; i++) {
+            if (cari.equalsIgnoreCase(data[i])) {
+                found = true;
+                break;
+            }
+        }
+
+        if (found == true) {
+            System.out.println("Alhamdulillah Data Ditemukan!");
+        } else {
+            System.out.println("Astagfirullah Data tidak ditemukan!");
+
+        }
+
+    }
+}
+
+
+import java.util.Scanner;
+
+
+public class LatihanPratikum02 {
+
+    public static void main(String[] args) {
+        String cari;
+        boolean found = false;
+        String[] data = new String[]{"1", "2", "3", "4", "5"};
+        Scanner input = new Scanner(System.in);
+        System.out.println("Masukkan data yang ingin anda cari");
+        cari = input.next();
+        for (int i = 0; i < data.length; i++) {
+            if (cari.equalsIgnoreCase(data[i])) {
+                found = true;
+                System.out.println("Data anda ditemukan pada indeks ke-" +i);
+
+            }
+        }
+
+        if (found != true) {
+            System.out.println("Data anda tidak ditemukan");
+        }
+    }
+}
+
+
+
+public class LatihanPratikum03 {
+
+    public static void main(String[] args) {
+        int max = 0;
+        int[] data = new int[]{70, 120, 30, 40, 50};
+        System.out.println("Data pada array :");
+        for (int i = 0; i < data.length; i++) {
+            System.out.print(data[i] + "\t");
+            if (data[i] > max) {
+                max = data[i];
+
+            }
+        }
+        System.out.println("\n Data terbesar pada array yaitu : " + max);
+    }
+
+}
+
+
+
+import java.util.Scanner;
+
+public class LatihanPratikum04 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String cari;
+        System.out.print("Masukkan kata ");
+        cari = input.nextLine();
+
+        int a = 0;
+        for (int i = 0; i < cari.length(); i++) {
+            if (cari.charAt(i) == 'a') {
+                a++;
+
+            }
+
+        }
+        System.out.println("Jumlah huruf a pada kata di atas adalah : " + a);
+    }
+}
